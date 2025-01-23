@@ -1,14 +1,8 @@
 from flask import Flask, render_template
+from middleware import create_app
 
-app = Flask(__name__ , template_folder = 'middleware/view' , static_folder = 'middleware/static')
 
-@app.route('/')
-def index():
-    return render_template('auth/auth.html')
-
-@app.route('/dashboard')
-def dashboard():
-    return render_template('app/home.html')
+app = create_app()
 
 if __name__ == '__main__':
     app.run(debug=True)

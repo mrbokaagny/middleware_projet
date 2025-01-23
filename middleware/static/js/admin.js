@@ -11,6 +11,14 @@
         $('.right-card').toggleClass('active-right-card')
     })
 
+    $('#card-to-load-admin-content-page__').on('click' , '.btn-to-active-modal-create' , function(e){
+        $('#card-to-load-admin-content-page__ .overlay-card-to-create').addClass('active_modal_create')
+    })
+
+    $('#card-to-load-admin-content-page__').on('click' , '.btn-to-close-modal-create' , function(e){
+        $('#card-to-load-admin-content-page__ .overlay-card-to-create').removeClass('active_modal_create')
+    })
+
   
 
    
