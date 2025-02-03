@@ -450,7 +450,7 @@
 }
 
 
-.modal-create-year-school{
+.modal-create{
    
     width: 100%;
     height: 100%;
@@ -557,3 +557,18 @@
 
 /* end sms pro */
 
+.flash-message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.flash-message.error {
+    background-color: #ffdddd;
+    color: #d8000c;
+    border: 1px solid #d8000c;
+}
+.flash-message.success {
+    background-color: #ddffdd;
+    color: #4F8A10;
+    border: 1px solid #4F8A10;
+}

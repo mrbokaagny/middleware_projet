@@ -57,7 +57,7 @@
 
                             <div id="btn-to-load-school-page"  class="card-item d-flex align-items-center">
                                 <span class="d-flex justify-content-center card-menu-icon align-items-center"><i class="icofont-shopping-cart"></i></span>
-                                <span onclick="document.location.href" style="font-size:15px;padding-left:.8em"> Produits</span>
+                                <span onclick="document.location.href='products'" style="font-size:15px;padding-left:.8em"> Produits</span>
                             </div>
     
                             <div id="btn-to-load-year-page" class="card-item d-flex align-items-center">
@@ -89,20 +89,31 @@
                     
                     <div id="card-to-load-admin-content-page__">
 
+
                         <button class="btn btn-primary btn-to-active-modal-create" type="button" class="btn btn-primary">
                             <span><i class="icofont-ui-add"></i></span>
                             Ajouter un(e) Administrateur(rice)
                         </button>
 
+                        <p>
+                            {% with messages = get_flashed_messages(with_categories=True) %}
+                                {% if messages %}
+                                    {% for category, message in messages %}
+                                        <div class="flash-message {{ category }}">{{ message }}</div>
+                                    {% endfor %}
+                                {% endif %}
+                            {% endwith %}
+                        </p>
+
                         <div class="overlay-card-to-create">
-                            <div class="d-flex justify-content-center align-items-center modal-create-year-school">
+                            <div class="d-flex justify-content-center align-items-center modal-create">
                                 <div class="col-sm-8 col-md-4 m-0" style="background-color:white;padding:.5em;border-radius:.5em">
                                         <div class="card-create-header d-flex justify-content-between align-items-center" style="padding:.2em">
                                             <span>Ajouter un établissement scolaire</span>
                                             <span style="width:30px;height:30px;border:1px solid red;color:red;border-radius:.2em;cursor:pointer" class="d-flex justify-content-center align-items-center btn-to-close-modal-create"><i class="icofont-ui-close"></i></span>
                                         </div>
                                         <div class="card-form-create w-100" style="position:relative;padding:.5em">
-                                            <form id="create-director-form" method="POST" action="/users/create" class="row p-0 m-0" style="gap:.0em">
+                                            <form method="POST" action="/user/create" class="row p-0 m-0" style="gap:.0em">
                                                 <div class="col-4">
                                                     <label for="director-name"> Nom  </label>
                                                     <input name="name" type="texte" id="director-name" class="form-control">
@@ -157,13 +168,61 @@
                                                 <td>{{ user.name }} {{ user.surname }}</td>
                                                 <td>{{ user.email }}</td>
                                                 <td>{{ user.number }}</td>
-                                                <td class="d-flex justify-content-around align-items-center">
-                                                    <span class="d-flex justify-content-center align-items-center table-list-icon icon-edit"><i class="icofont-edit"></i></span>
+                                                <td class="d-flex justify-content-around align-items-center btn-fade-modal-update">
+                                                    <span onclick="user_detail('{{ user.id|int }}')" class="d-flex justify-content-center align-items-center table-list-icon icon-edit btn-fade-modal-update"><i class="icofont-edit"></i></span>
                                                 </td>
                                             </tr>
                                         {% endfor %}
                                     </tbody>
                                 </table>
+                            </div>
+                        </div>
+
+                        <div class="modal-to-update-data">
+                            <div class="d-flex justify-content-center align-items-center modal-create">
+                                <div class="col-sm-8 col-md-4 m-0" style="background-color:white;padding:.5em;border-radius:.5em">
+                                        <div class="card-create-header d-flex justify-content-between align-items-center" style="padding:.2em">
+                                            <span>Modifier les informations d'un établissement scolaire</span>
+                                            <span style="width:30px;height:30px;border:1px solid red;color:red;border-radius:.2em;cursor:pointer" class="d-flex justify-content-center align-items-center btn-to-close-modal-create"><i class="icofont-ui-close"></i></span>
+                                        </div>
+                                        <div class="card-form-create w-100" style="position:relative;padding:.5em">
+                                            <form method="POST" action="/user/update" class="row p-0 m-0" style="gap:.0em">
+                                                <div class="col-4">
+                                                    <label for="admin-name"> Nom  </label>
+                                                    <input name="name" type="texte" id="admin-name" class="form-control">
+                                                </div>
+                                                <div class="col-8">
+                                                    <label for="admin-surname"> Prenom </label>
+                                                    <input type="texte" name="surname" id="admin-surname" class="form-control">
+                                                </div>
+                                                <div class="col-12 mt-2">
+                                                    <label for="admin-email"> Email</label>
+                                                    <input name="email" type="email" id="admin-email" class="form-control">
+                                                </div>
+                                                <div class="col-12 mt-2">
+                                                    <label for="admin-contact">Contact</label>
+                                                    <input name="number" type="text" id="admin-contact" class="form-control">
+                                                </div>
+                                                <div class="col-12 mt-2">
+                                                    <label for="admin-role">Rôle</label>
+                                                    <select name="role_id" class="form-control" name="admin-role" id="admin-role">
+                                                        <option value=""> -- Selectionner le rôle -- </option>
+                                                        {% for role in roles %}
+                                                            <option value="{{ role.id }}">{{ role.name }}</option>
+                                                        {% endfor %}
+                                                    </select>
+                                                </div>
+                                                <input type="hidden" id="user_id" name="user_id">
+                                                <div class="mt-2 text-center">
+                                                    <div class="spinner-border text-dark spinner-load" role="status">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-secondary btn-admin-create">
+                                                    <i class="icofont-save"></i> Sauvegarder
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                </div>
                             </div>
                         </div>
 
@@ -180,4 +239,25 @@
 </body>
 <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
 <script src="{{ url_for('static', filename='js/admin.js') }}"></script>
+<script>
+    function user_detail(id){
+
+        $.ajax({
+            url: '/user/'+id,
+            type: 'GET',
+            success: function(data){
+                $("#admin-name").val(data.name)
+                $("#admin-surname").val(data.surname)
+                $("#admin-email").val(data.email)
+                $("#admin-contact").val(data.number)
+                $("#admin-role").val(data.role_id)
+                $("#user_id").val(data.id)
+            },
+            error: function(error){
+                console.log(error)
+            }
+        })
+
+    }
+</script>
 </html>

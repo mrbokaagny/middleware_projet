@@ -1,5 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+from werkzeug.security import generate_password_hash, check_password_hash
 
 db = SQLAlchemy()
 
@@ -32,6 +33,22 @@ class User(BaseModel):
 
     def __repr__(self):
         return f"User('{self.name}', '{self.surname}', '{self.email}', '{self.number}')"
+
+    def set_password(self, password):
+        self.password = generate_password_hash(password)
+
+    def check_password(self, password):
+        return check_password_hash(self.password, password)
+    
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'surname': self.surname,
+            'email': self.email,
+            'number': self.number,
+            'role_id': self.role_id
+        }
 
 
 class Role(BaseModel):
