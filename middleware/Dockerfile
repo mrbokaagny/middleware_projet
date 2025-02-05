@@ -1,0 +1,17 @@
+# Utiliser Python comme base
+FROM python:3.10
+
+# Définir le répertoire de travail
+WORKDIR /app
+
+# Copier les fichiers
+COPY . /app
+
+# Installer les dépendances
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Exposer le port du middleware
+EXPOSE 5000
+
+# Lancer le middleware
+CMD ["python", "middleware.py"]
