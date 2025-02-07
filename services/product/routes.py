@@ -1,14 +1,13 @@
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import jwt_required, get_jwt_identity
-from extensions import db  # ✅ Importer db depuis extensions
-from models import Product  # 
+from extensions import db  
+from models import Product   
 
 product_bp = Blueprint('product', __name__)
 
 @product_bp.route('/products', methods=['GET'])
 @jwt_required()
 def get_products():
-    """ Récupérer tous les produits (Tout le monde peut voir) """
     products = Product.query.all()
     products_list = [{"id": p.id, "name": p.name, "price": p.price, "stock": p.stock} for p in products]
     return jsonify(products_list)
@@ -16,7 +15,6 @@ def get_products():
 @product_bp.route('/products', methods=['POST'])
 @jwt_required()
 def add_product():
-    """ Ajouter un produit (Seulement Admin) """
     current_user = get_jwt_identity()
     if current_user["role"] != 1:  # Seul l'admin (role_id = 1) peut ajouter un produit
         return jsonify({"error": "Permission refusée"}), 403
@@ -31,7 +29,6 @@ def add_product():
 @product_bp.route('/products/<int:product_id>', methods=['PUT'])
 @jwt_required()
 def update_product(product_id):
-    """ Modifier un produit (Seulement Admin) """
     current_user = get_jwt_identity()
     if current_user["role"] != 1:
         return jsonify({"error": "Permission refusée"}), 403
@@ -50,7 +47,6 @@ def update_product(product_id):
 @product_bp.route('/products/<int:product_id>', methods=['DELETE'])
 @jwt_required()
 def delete_product(product_id):
-    """ Supprimer un produit (Seulement Admin) """
     current_user = get_jwt_identity()
     if current_user["role"] != 1:
         return jsonify({"error": "Permission refusée"}), 403

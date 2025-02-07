@@ -1,5 +1,5 @@
 # Utiliser Python comme base
-FROM python:3.10
+FROM python:3.13
 
 # Définir le répertoire de travail
 WORKDIR /app

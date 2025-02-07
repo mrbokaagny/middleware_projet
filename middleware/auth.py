@@ -1,20 +1,28 @@
 from flask import request, jsonify
-from flask_jwt_extended import JWTManager, create_access_token, get_jwt_identity, verify_jwt_in_request
+from flask_jwt_extended import JWTManager, create_access_token, get_jwt_identity, verify_jwt_in_request,get_jwt
 import datetime
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 jwt = JWTManager()
 
 def init_auth(app):
-    app.config["JWT_SECRET_KEY"] = "super_secret_key"  # Change cette clé !
+    app.config["JWT_SECRET_KEY"] = os.getenv("JWT_SECRET_KEY")
+    app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
     app.config["JWT_ACCESS_TOKEN_EXPIRES"] = datetime.timedelta(hours=1)
     jwt.init_app(app)
 
 def generate_token(user_id, role):
-    return create_access_token(identity={"id": user_id, "role": role})
+    return create_access_token(identity=str(user_id), additional_claims={"role": role})
 
 def verify_token():
     try:
         verify_jwt_in_request()
-        return get_jwt_identity()
+        user_identity = get_jwt_identity()
+        claims = get_jwt()
+        role = claims.get("role", None)
+        return {"id": user_identity, "role": role} if user_identity else None
     except Exception as e:
         return None

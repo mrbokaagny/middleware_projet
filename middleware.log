@@ -40,3 +40,410 @@
 2025-02-05 03:38:20,009 -  * Restarting with stat
 2025-02-05 03:38:20,488 -  * Debugger is active!
 2025-02-05 03:38:20,490 -  * Debugger PIN: 123-894-753
+2025-02-05 03:38:51,482 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-05 03:38:51,482 - [33mPress CTRL+C to quit[0m
+2025-02-05 03:38:51,483 -  * Restarting with stat
+2025-02-05 03:38:52,051 -  * Debugger is active!
+2025-02-05 03:38:52,054 -  * Debugger PIN: 123-894-753
+2025-02-05 03:39:14,185 - 127.0.0.1 - - [05/Feb/2025 03:39:14] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-05 03:39:14,242 - 127.0.0.1 - - [05/Feb/2025 03:39:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-05 03:39:50,555 - 127.0.0.1 - - [05/Feb/2025 03:39:50] "[33mGET /service/test HTTP/1.1[0m" 404 -
+2025-02-05 03:50:12,572 - Service: users, Endpoint: login, Méthode: POST, Status: 401
+2025-02-05 03:50:12,573 - 127.0.0.1 - - [05/Feb/2025 03:50:12] "[31m[1mPOST /users/login HTTP/1.1[0m" 401 -
+2025-02-05 03:50:19,954 - Service: users, Endpoint: login, Méthode: POST, Status: 401
+2025-02-05 03:50:19,954 - 127.0.0.1 - - [05/Feb/2025 03:50:19] "[31m[1mPOST /users/login HTTP/1.1[0m" 401 -
+2025-02-05 03:50:23,343 - Service: users, Endpoint: login, Méthode: POST, Status: 401
+2025-02-05 03:50:23,344 - 127.0.0.1 - - [05/Feb/2025 03:50:23] "[31m[1mPOST /users/login HTTP/1.1[0m" 401 -
+2025-02-05 03:51:26,910 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-05 03:51:26,910 - [33mPress CTRL+C to quit[0m
+2025-02-05 03:51:26,911 -  * Restarting with stat
+2025-02-05 03:51:27,470 -  * Debugger is active!
+2025-02-05 03:51:27,473 -  * Debugger PIN: 123-894-753
+2025-02-05 03:54:48,383 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-05 03:54:48,383 - [33mPress CTRL+C to quit[0m
+2025-02-05 03:54:48,384 -  * Restarting with stat
+2025-02-05 03:54:48,953 -  * Debugger is active!
+2025-02-05 03:54:48,956 -  * Debugger PIN: 123-894-753
+2025-02-05 03:55:02,260 - Service: users, Endpoint: login, Méthode: POST, Status: 401
+2025-02-05 03:55:02,261 - 127.0.0.1 - - [05/Feb/2025 03:55:02] "[31m[1mPOST /users/login HTTP/1.1[0m" 401 -
+2025-02-05 03:55:28,851 - 127.0.0.1 - - [05/Feb/2025 03:55:28] "[33mPOST /users HTTP/1.1[0m" 404 -
+2025-02-05 03:55:30,429 - 127.0.0.1 - - [05/Feb/2025 03:55:30] "[33mPOST /users HTTP/1.1[0m" 404 -
+2025-02-05 03:55:36,321 - 127.0.0.1 - - [05/Feb/2025 03:55:36] "[31m[1mPOST /users/users HTTP/1.1[0m" 401 -
+2025-02-05 03:55:39,392 - 127.0.0.1 - - [05/Feb/2025 03:55:39] "[31m[1mPOST /users/users HTTP/1.1[0m" 401 -
+2025-02-05 03:55:58,067 - 127.0.0.1 - - [05/Feb/2025 03:55:58] "[31m[1mPOST /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 03:56:00,565 - 127.0.0.1 - - [05/Feb/2025 03:56:00] "[31m[1mPOST /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 03:56:05,647 - 127.0.0.1 - - [05/Feb/2025 03:56:05] "[31m[1mPOST /users/created HTTP/1.1[0m" 401 -
+2025-02-05 04:04:14,187 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-05 04:04:14,187 - [33mPress CTRL+C to quit[0m
+2025-02-05 04:04:14,188 -  * Restarting with stat
+2025-02-05 04:04:14,755 -  * Debugger is active!
+2025-02-05 04:04:14,757 -  * Debugger PIN: 123-894-753
+2025-02-05 04:04:42,666 - Service: users, Endpoint: login, Méthode: POST, Status: 500
+2025-02-05 04:04:42,717 - 127.0.0.1 - - [05/Feb/2025 04:04:42] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-02-05 04:05:30,292 - Service: users, Endpoint: login, Méthode: POST, Status: 500
+2025-02-05 04:05:30,295 - 127.0.0.1 - - [05/Feb/2025 04:05:30] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-02-05 04:06:25,594 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-05 04:06:25,594 - [33mPress CTRL+C to quit[0m
+2025-02-05 04:06:25,595 -  * Restarting with stat
+2025-02-05 04:06:26,166 -  * Debugger is active!
+2025-02-05 04:06:26,169 -  * Debugger PIN: 123-894-753
+2025-02-05 04:06:31,935 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-05 04:06:31,935 - 127.0.0.1 - - [05/Feb/2025 04:06:31] "POST /users/login HTTP/1.1" 200 -
+2025-02-05 04:07:04,748 - 127.0.0.1 - - [05/Feb/2025 04:07:04] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 04:07:21,241 - 127.0.0.1 - - [05/Feb/2025 04:07:21] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 04:07:28,788 - 127.0.0.1 - - [05/Feb/2025 04:07:28] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 04:07:43,898 - 127.0.0.1 - - [05/Feb/2025 04:07:43] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 04:15:04,083 - 127.0.0.1 - - [05/Feb/2025 04:15:04] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 04:15:05,544 - 127.0.0.1 - - [05/Feb/2025 04:15:05] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 04:16:05,445 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-05 04:16:05,446 - 127.0.0.1 - - [05/Feb/2025 04:16:05] "POST /users/login HTTP/1.1" 200 -
+2025-02-05 04:16:17,322 - 127.0.0.1 - - [05/Feb/2025 04:16:17] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 04:19:42,064 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-05 04:19:42,065 - [33mPress CTRL+C to quit[0m
+2025-02-05 04:19:42,066 -  * Restarting with stat
+2025-02-05 04:19:42,639 -  * Debugger is active!
+2025-02-05 04:19:42,642 -  * Debugger PIN: 123-894-753
+2025-02-05 04:19:52,797 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-05 04:19:52,798 - 127.0.0.1 - - [05/Feb/2025 04:19:52] "POST /users/login HTTP/1.1" 200 -
+2025-02-05 04:20:06,389 - 127.0.0.1 - - [05/Feb/2025 04:20:06] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 04:20:07,795 - 127.0.0.1 - - [05/Feb/2025 04:20:07] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 04:27:40,588 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-05 04:27:40,654 -  * Restarting with stat
+2025-02-05 04:27:41,213 -  * Debugger is active!
+2025-02-05 04:27:41,216 -  * Debugger PIN: 123-894-753
+2025-02-05 04:28:07,151 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-05 04:28:07,151 - [33mPress CTRL+C to quit[0m
+2025-02-05 04:28:07,152 -  * Restarting with stat
+2025-02-05 04:28:07,734 -  * Debugger is active!
+2025-02-05 04:28:07,736 -  * Debugger PIN: 123-894-753
+2025-02-05 04:28:59,404 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-05 04:28:59,405 - 127.0.0.1 - - [05/Feb/2025 04:28:59] "POST /users/login HTTP/1.1" 200 -
+2025-02-05 04:29:10,959 - 127.0.0.1 - - [05/Feb/2025 04:29:10] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 04:29:33,251 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\middleware.py', reloading
+2025-02-05 04:29:33,314 -  * Restarting with stat
+2025-02-05 04:29:33,863 -  * Debugger is active!
+2025-02-05 04:29:33,866 -  * Debugger PIN: 123-894-753
+2025-02-05 04:29:35,887 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\middleware.py', reloading
+2025-02-05 04:29:35,923 -  * Restarting with stat
+2025-02-05 04:29:36,545 -  * Debugger is active!
+2025-02-05 04:29:36,548 -  * Debugger PIN: 123-894-753
+2025-02-05 04:29:39,594 - 127.0.0.1 - - [05/Feb/2025 04:29:39] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 04:30:40,320 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-05 04:30:40,320 - 127.0.0.1 - - [05/Feb/2025 04:30:40] "POST /users/login HTTP/1.1" 200 -
+2025-02-05 22:27:17,576 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-05 22:27:17,577 - [33mPress CTRL+C to quit[0m
+2025-02-05 22:27:17,578 -  * Restarting with stat
+2025-02-05 22:27:18,201 -  * Debugger is active!
+2025-02-05 22:27:18,205 -  * Debugger PIN: 123-894-753
+2025-02-05 22:27:33,877 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-05 22:27:33,879 - 127.0.0.1 - - [05/Feb/2025 22:27:33] "POST /users/login HTTP/1.1" 200 -
+2025-02-05 22:28:51,430 - 127.0.0.1 - - [05/Feb/2025 22:28:51] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 22:30:54,434 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-05 22:30:54,506 -  * Restarting with stat
+2025-02-05 22:30:55,092 -  * Debugger is active!
+2025-02-05 22:30:55,094 -  * Debugger PIN: 123-894-753
+2025-02-05 22:31:07,158 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-05 22:31:07,220 -  * Restarting with stat
+2025-02-05 22:31:07,834 -  * Debugger is active!
+2025-02-05 22:31:07,837 -  * Debugger PIN: 123-894-753
+2025-02-05 22:31:20,896 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-05 22:31:20,964 -  * Restarting with stat
+2025-02-05 22:31:21,565 -  * Debugger is active!
+2025-02-05 22:31:21,568 -  * Debugger PIN: 123-894-753
+2025-02-05 22:35:33,950 - 127.0.0.1 - - [05/Feb/2025 22:35:33] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 22:37:05,792 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-05 22:37:05,792 - 127.0.0.1 - - [05/Feb/2025 22:37:05] "POST /users/login HTTP/1.1" 200 -
+2025-02-05 22:37:23,806 - 127.0.0.1 - - [05/Feb/2025 22:37:23] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 22:37:25,113 - 127.0.0.1 - - [05/Feb/2025 22:37:25] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 22:38:59,250 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-05 22:38:59,314 -  * Restarting with stat
+2025-02-05 22:39:21,567 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-05 22:39:21,567 - [33mPress CTRL+C to quit[0m
+2025-02-05 22:39:21,568 -  * Restarting with stat
+2025-02-05 22:39:22,132 -  * Debugger is active!
+2025-02-05 22:39:22,135 -  * Debugger PIN: 123-894-753
+2025-02-05 22:39:34,587 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-05 22:39:34,588 - 127.0.0.1 - - [05/Feb/2025 22:39:34] "POST /users/login HTTP/1.1" 200 -
+2025-02-05 22:39:55,881 - 127.0.0.1 - - [05/Feb/2025 22:39:55] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 22:39:57,145 - 127.0.0.1 - - [05/Feb/2025 22:39:57] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 22:39:58,112 - 127.0.0.1 - - [05/Feb/2025 22:39:58] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 22:41:02,695 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-05 22:41:02,756 -  * Restarting with stat
+2025-02-05 22:41:03,247 -  * Debugger is active!
+2025-02-05 22:41:03,249 -  * Debugger PIN: 123-894-753
+2025-02-05 22:41:05,270 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-05 22:41:05,302 -  * Restarting with stat
+2025-02-05 22:41:05,833 -  * Debugger is active!
+2025-02-05 22:41:05,836 -  * Debugger PIN: 123-894-753
+2025-02-05 22:41:06,847 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-05 22:41:06,875 -  * Restarting with stat
+2025-02-05 22:41:07,372 -  * Debugger is active!
+2025-02-05 22:41:07,374 -  * Debugger PIN: 123-894-753
+2025-02-05 22:41:16,048 - 127.0.0.1 - - [05/Feb/2025 22:41:16] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 22:41:31,517 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-05 22:41:31,597 -  * Restarting with stat
+2025-02-05 22:41:32,111 -  * Debugger is active!
+2025-02-05 22:41:32,114 -  * Debugger PIN: 123-894-753
+2025-02-05 22:46:09,209 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-05 22:46:09,210 - 127.0.0.1 - - [05/Feb/2025 22:46:09] "POST /users/login HTTP/1.1" 200 -
+2025-02-05 22:46:19,704 - 127.0.0.1 - - [05/Feb/2025 22:46:19] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 22:46:50,869 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\middleware.py', reloading
+2025-02-05 22:46:50,927 -  * Restarting with stat
+2025-02-05 22:46:51,506 -  * Debugger is active!
+2025-02-05 22:46:51,509 -  * Debugger PIN: 123-894-753
+2025-02-05 22:46:57,955 - Service: users, Endpoint: listing, Méthode: GET, Status: 422
+2025-02-05 22:46:57,955 - 127.0.0.1 - - [05/Feb/2025 22:46:57] "[31m[1mGET /users/listing HTTP/1.1[0m" 422 -
+2025-02-05 22:47:14,650 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-05 22:47:14,709 -  * Restarting with stat
+2025-02-05 22:47:15,235 -  * Debugger is active!
+2025-02-05 22:47:15,238 -  * Debugger PIN: 123-894-753
+2025-02-05 22:47:19,041 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-05 22:47:19,041 - [33mPress CTRL+C to quit[0m
+2025-02-05 22:47:19,042 -  * Restarting with stat
+2025-02-05 22:47:19,592 -  * Debugger is active!
+2025-02-05 22:47:19,594 -  * Debugger PIN: 123-894-753
+2025-02-05 23:09:19,392 - Service: users, Endpoint: listing, Méthode: GET, Status: 422
+2025-02-05 23:09:19,392 - 127.0.0.1 - - [05/Feb/2025 23:09:19] "[31m[1mGET /users/listing HTTP/1.1[0m" 422 -
+2025-02-05 23:09:43,331 - Service: users, Endpoint: listing, Méthode: GET, Status: 422
+2025-02-05 23:09:43,331 - 127.0.0.1 - - [05/Feb/2025 23:09:43] "[31m[1mGET /users/listing HTTP/1.1[0m" 422 -
+2025-02-05 23:10:13,631 - Service: users, Endpoint: listing, Méthode: GET, Status: 422
+2025-02-05 23:10:13,632 - 127.0.0.1 - - [05/Feb/2025 23:10:13] "[31m[1mGET /users/listing HTTP/1.1[0m" 422 -
+2025-02-05 23:11:11,193 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\middleware.py', reloading
+2025-02-05 23:11:11,261 -  * Restarting with stat
+2025-02-05 23:11:11,879 -  * Debugger is active!
+2025-02-05 23:11:11,881 -  * Debugger PIN: 123-894-753
+2025-02-05 23:11:15,906 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\middleware.py', reloading
+2025-02-05 23:11:15,940 -  * Restarting with stat
+2025-02-05 23:11:16,473 -  * Debugger is active!
+2025-02-05 23:11:16,476 -  * Debugger PIN: 123-894-753
+2025-02-05 23:11:35,513 - Service: users, Endpoint: listing, Méthode: GET, Status: 422
+2025-02-05 23:11:35,514 - 127.0.0.1 - - [05/Feb/2025 23:11:35] "[31m[1mGET /users/listing HTTP/1.1[0m" 422 -
+2025-02-05 23:11:47,666 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\middleware.py', reloading
+2025-02-05 23:11:47,731 -  * Restarting with stat
+2025-02-05 23:11:48,236 -  * Debugger is active!
+2025-02-05 23:11:48,238 -  * Debugger PIN: 123-894-753
+2025-02-05 23:12:05,342 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\middleware.py', reloading
+2025-02-05 23:12:05,398 -  * Restarting with stat
+2025-02-05 23:12:05,889 -  * Debugger is active!
+2025-02-05 23:12:05,892 -  * Debugger PIN: 123-894-753
+2025-02-05 23:12:08,918 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\middleware.py', reloading
+2025-02-05 23:12:08,950 -  * Restarting with stat
+2025-02-05 23:12:09,508 -  * Debugger is active!
+2025-02-05 23:12:09,510 -  * Debugger PIN: 123-894-753
+2025-02-05 23:13:19,624 - Service: users, Endpoint: listing, Méthode: GET, Status: 422
+2025-02-05 23:13:19,624 - 127.0.0.1 - - [05/Feb/2025 23:13:19] "[31m[1mGET /users/listing HTTP/1.1[0m" 422 -
+2025-02-05 23:13:44,074 - Service: users, Endpoint: listing, Méthode: GET, Status: 200
+2025-02-05 23:13:44,075 - 127.0.0.1 - - [05/Feb/2025 23:13:44] "GET /users/listing HTTP/1.1" 200 -
+2025-02-05 23:15:11,353 - 127.0.0.1 - - [05/Feb/2025 23:15:11] "[35m[1mGET /users/listing HTTP/1.1[0m" 500 -
+2025-02-05 23:16:06,976 - Service: users, Endpoint: listing, Méthode: GET, Status: 422
+2025-02-05 23:16:06,977 - 127.0.0.1 - - [05/Feb/2025 23:16:06] "[31m[1mGET /users/listing HTTP/1.1[0m" 422 -
+2025-02-05 23:16:27,034 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\middleware.py', reloading
+2025-02-05 23:16:27,102 -  * Restarting with stat
+2025-02-05 23:16:27,594 -  * Debugger is active!
+2025-02-05 23:16:27,596 -  * Debugger PIN: 123-894-753
+2025-02-05 23:17:27,608 - 127.0.0.1 - - [05/Feb/2025 23:17:27] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 23:17:29,258 - 127.0.0.1 - - [05/Feb/2025 23:17:29] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 23:17:36,608 - 127.0.0.1 - - [05/Feb/2025 23:17:36] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 23:17:37,909 - 127.0.0.1 - - [05/Feb/2025 23:17:37] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 23:17:58,082 - 127.0.0.1 - - [05/Feb/2025 23:17:58] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 23:18:01,067 - 127.0.0.1 - - [05/Feb/2025 23:18:01] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 23:23:56,889 - 127.0.0.1 - - [05/Feb/2025 23:23:56] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 23:50:17,925 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-05 23:50:17,925 - 127.0.0.1 - - [05/Feb/2025 23:50:17] "POST /users/login HTTP/1.1" 200 -
+2025-02-05 23:50:37,356 - 127.0.0.1 - - [05/Feb/2025 23:50:37] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 23:51:10,890 - 127.0.0.1 - - [05/Feb/2025 23:51:10] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 23:52:15,192 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-05 23:52:15,285 -  * Restarting with stat
+2025-02-05 23:52:15,837 -  * Debugger is active!
+2025-02-05 23:52:15,840 -  * Debugger PIN: 123-894-753
+2025-02-05 23:52:51,067 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\config.py', reloading
+2025-02-05 23:52:51,147 -  * Restarting with stat
+2025-02-05 23:52:51,652 -  * Debugger is active!
+2025-02-05 23:52:51,655 -  * Debugger PIN: 123-894-753
+2025-02-05 23:57:33,257 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-05 23:57:33,257 - [33mPress CTRL+C to quit[0m
+2025-02-05 23:57:33,258 -  * Restarting with stat
+2025-02-05 23:57:33,822 -  * Debugger is active!
+2025-02-05 23:57:33,825 -  * Debugger PIN: 123-894-753
+2025-02-05 23:57:42,822 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-05 23:57:42,822 - 127.0.0.1 - - [05/Feb/2025 23:57:42] "POST /users/login HTTP/1.1" 200 -
+2025-02-05 23:58:06,346 - 127.0.0.1 - - [05/Feb/2025 23:58:06] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-05 23:59:01,126 - 127.0.0.1 - - [05/Feb/2025 23:59:01] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-06 00:01:21,583 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-06 00:01:21,584 - 127.0.0.1 - - [06/Feb/2025 00:01:21] "POST /users/login HTTP/1.1" 200 -
+2025-02-06 00:01:36,208 - Service: users, Endpoint: listing, Méthode: GET, Status: 200
+2025-02-06 00:01:36,209 - 127.0.0.1 - - [06/Feb/2025 00:01:36] "GET /users/listing HTTP/1.1" 200 -
+2025-02-06 00:02:38,225 - Service: users, Endpoint: listing, Méthode: GET, Status: 200
+2025-02-06 00:02:38,225 - 127.0.0.1 - - [06/Feb/2025 00:02:38] "GET /users/listing HTTP/1.1" 200 -
+2025-02-06 00:02:43,396 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-06 00:02:43,397 - 127.0.0.1 - - [06/Feb/2025 00:02:43] "POST /users/login HTTP/1.1" 200 -
+2025-02-06 00:02:55,510 - Service: users, Endpoint: listing, Méthode: GET, Status: 200
+2025-02-06 00:02:55,510 - 127.0.0.1 - - [06/Feb/2025 00:02:55] "GET /users/listing HTTP/1.1" 200 -
+2025-02-06 00:03:22,832 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 00:03:22,905 -  * Restarting with stat
+2025-02-06 00:03:23,459 -  * Debugger is active!
+2025-02-06 00:03:23,462 -  * Debugger PIN: 123-894-753
+2025-02-06 00:03:32,516 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 00:03:32,589 -  * Restarting with stat
+2025-02-06 00:03:33,222 -  * Debugger is active!
+2025-02-06 00:03:33,224 -  * Debugger PIN: 123-894-753
+2025-02-06 00:03:37,248 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 00:03:37,282 -  * Restarting with stat
+2025-02-06 00:03:37,853 -  * Debugger is active!
+2025-02-06 00:03:37,856 -  * Debugger PIN: 123-894-753
+2025-02-06 00:03:38,870 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 00:03:38,900 -  * Restarting with stat
+2025-02-06 00:03:39,447 -  * Debugger is active!
+2025-02-06 00:03:39,450 -  * Debugger PIN: 123-894-753
+2025-02-06 00:03:40,464 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 00:03:40,496 -  * Restarting with stat
+2025-02-06 00:03:41,035 -  * Debugger is active!
+2025-02-06 00:03:41,038 -  * Debugger PIN: 123-894-753
+2025-02-06 00:03:54,112 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 00:03:54,185 -  * Restarting with stat
+2025-02-06 00:03:54,698 -  * Debugger is active!
+2025-02-06 00:03:54,701 -  * Debugger PIN: 123-894-753
+2025-02-06 00:04:03,758 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 00:04:03,846 -  * Restarting with stat
+2025-02-06 00:04:04,453 -  * Debugger is active!
+2025-02-06 00:04:04,456 -  * Debugger PIN: 123-894-753
+2025-02-06 00:04:11,501 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 00:04:11,535 -  * Restarting with stat
+2025-02-06 00:04:12,097 -  * Debugger is active!
+2025-02-06 00:04:12,099 -  * Debugger PIN: 123-894-753
+2025-02-06 00:04:50,833 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-06 00:04:50,833 - 127.0.0.1 - - [06/Feb/2025 00:04:50] "POST /users/login HTTP/1.1" 200 -
+2025-02-06 00:04:58,139 - 127.0.0.1 - - [06/Feb/2025 00:04:58] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-06 00:05:26,526 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 00:05:26,596 -  * Restarting with stat
+2025-02-06 00:05:27,128 -  * Debugger is active!
+2025-02-06 00:05:27,130 -  * Debugger PIN: 123-894-753
+2025-02-06 00:05:44,422 - 127.0.0.1 - - [06/Feb/2025 00:05:44] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-06 00:05:53,273 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 00:05:53,341 -  * Restarting with stat
+2025-02-06 00:05:53,872 -  * Debugger is active!
+2025-02-06 00:05:53,874 -  * Debugger PIN: 123-894-753
+2025-02-06 00:06:03,932 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 00:06:04,004 -  * Restarting with stat
+2025-02-06 00:06:04,533 -  * Debugger is active!
+2025-02-06 00:06:04,536 -  * Debugger PIN: 123-894-753
+2025-02-06 00:06:06,554 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 00:06:06,588 -  * Restarting with stat
+2025-02-06 00:06:07,132 -  * Debugger is active!
+2025-02-06 00:06:07,134 -  * Debugger PIN: 123-894-753
+2025-02-06 00:06:10,155 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 00:06:10,193 -  * Restarting with stat
+2025-02-06 00:06:10,744 -  * Debugger is active!
+2025-02-06 00:06:10,748 -  * Debugger PIN: 123-894-753
+2025-02-06 00:06:13,150 - Service: users, Endpoint: listing, Méthode: GET, Status: 200
+2025-02-06 00:06:13,151 - 127.0.0.1 - - [06/Feb/2025 00:06:13] "GET /users/listing HTTP/1.1" 200 -
+2025-02-06 00:08:07,123 - 127.0.0.1 - - [06/Feb/2025 00:08:07] "[31m[1mPOST /users/login HTTP/1.1[0m" 415 -
+2025-02-06 00:08:16,890 - Service: users, Endpoint: login, Méthode: POST, Status: 401
+2025-02-06 00:08:16,890 - 127.0.0.1 - - [06/Feb/2025 00:08:16] "[31m[1mPOST /users/login HTTP/1.1[0m" 401 -
+2025-02-06 00:18:56,438 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-06 00:18:56,438 - [33mPress CTRL+C to quit[0m
+2025-02-06 00:18:56,439 -  * Restarting with stat
+2025-02-06 00:18:57,003 -  * Debugger is active!
+2025-02-06 00:18:57,006 -  * Debugger PIN: 123-894-753
+2025-02-06 00:19:07,247 - Service: users, Endpoint: login, Méthode: POST, Status: 401
+2025-02-06 00:19:07,247 - 127.0.0.1 - - [06/Feb/2025 00:19:07] "[31m[1mPOST /users/login HTTP/1.1[0m" 401 -
+2025-02-06 00:19:28,982 - Service: users, Endpoint: login, Méthode: POST, Status: 500
+2025-02-06 00:19:28,995 - 127.0.0.1 - - [06/Feb/2025 00:19:28] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-02-06 00:20:30,489 - Service: users, Endpoint: login, Méthode: POST, Status: 500
+2025-02-06 00:20:30,499 - 127.0.0.1 - - [06/Feb/2025 00:20:30] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-02-06 00:21:04,445 - Service: users, Endpoint: login, Méthode: POST, Status: 500
+2025-02-06 00:21:04,448 - 127.0.0.1 - - [06/Feb/2025 00:21:04] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-02-06 00:22:08,767 - 127.0.0.1 - - [06/Feb/2025 00:22:08] "[33mPOST /generate_token HTTP/1.1[0m" 404 -
+2025-02-06 00:22:08,770 - Service: users, Endpoint: login, Méthode: POST, Status: 500
+2025-02-06 00:22:08,770 - 127.0.0.1 - - [06/Feb/2025 00:22:08] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-02-06 00:23:23,499 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\middleware.py', reloading
+2025-02-06 00:23:23,584 -  * Restarting with stat
+2025-02-06 00:24:15,469 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-06 00:24:15,469 - [33mPress CTRL+C to quit[0m
+2025-02-06 00:24:15,471 -  * Restarting with stat
+2025-02-06 00:24:16,035 -  * Debugger is active!
+2025-02-06 00:24:16,037 -  * Debugger PIN: 123-894-753
+2025-02-06 00:24:21,758 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-06 00:24:21,759 - 127.0.0.1 - - [06/Feb/2025 00:24:21] "POST /users/login HTTP/1.1" 200 -
+2025-02-06 01:38:32,152 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-06 01:38:32,152 - [33mPress CTRL+C to quit[0m
+2025-02-06 01:38:32,154 -  * Restarting with stat
+2025-02-06 01:38:32,704 -  * Debugger is active!
+2025-02-06 01:38:32,708 -  * Debugger PIN: 123-894-753
+2025-02-06 01:38:44,007 - 127.0.0.1 - - [06/Feb/2025 01:38:44] "[35m[1mPOST /generate_token HTTP/1.1[0m" 500 -
+2025-02-06 01:38:44,011 - Service: users, Endpoint: login, Méthode: POST, Status: 500
+2025-02-06 01:38:44,011 - 127.0.0.1 - - [06/Feb/2025 01:38:44] "[35m[1mPOST /users/login HTTP/1.1[0m" 500 -
+2025-02-06 01:38:57,850 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\middleware.py', reloading
+2025-02-06 01:38:57,936 -  * Restarting with stat
+2025-02-06 01:38:58,493 -  * Debugger is active!
+2025-02-06 01:38:58,496 -  * Debugger PIN: 123-894-753
+2025-02-06 01:39:17,840 - 127.0.0.1 - - [06/Feb/2025 01:39:17] "POST /generate_token HTTP/1.1" 200 -
+2025-02-06 01:39:17,843 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-06 01:39:17,843 - 127.0.0.1 - - [06/Feb/2025 01:39:17] "POST /users/login HTTP/1.1" 200 -
+2025-02-06 01:39:47,694 - 127.0.0.1 - - [06/Feb/2025 01:39:47] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-06 01:39:58,914 - 127.0.0.1 - - [06/Feb/2025 01:39:58] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-06 01:40:02,151 - 127.0.0.1 - - [06/Feb/2025 01:40:02] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-06 01:40:03,301 - 127.0.0.1 - - [06/Feb/2025 01:40:03] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-06 01:40:30,975 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 01:40:31,040 -  * Restarting with stat
+2025-02-06 01:40:31,594 -  * Debugger is active!
+2025-02-06 01:40:31,596 -  * Debugger PIN: 123-894-753
+2025-02-06 01:40:34,622 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 01:40:34,654 -  * Restarting with stat
+2025-02-06 01:40:35,203 -  * Debugger is active!
+2025-02-06 01:40:35,206 -  * Debugger PIN: 123-894-753
+2025-02-06 01:40:36,217 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 01:40:36,251 -  * Restarting with stat
+2025-02-06 01:40:36,798 -  * Debugger is active!
+2025-02-06 01:40:36,800 -  * Debugger PIN: 123-894-753
+2025-02-06 01:40:40,106 - 127.0.0.1 - - [06/Feb/2025 01:40:40] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-06 01:40:49,028 - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-06 01:40:49,029 - [33mPress CTRL+C to quit[0m
+2025-02-06 01:40:49,030 -  * Restarting with stat
+2025-02-06 01:40:49,642 -  * Debugger is active!
+2025-02-06 01:40:49,645 -  * Debugger PIN: 123-894-753
+2025-02-06 01:40:52,889 - 127.0.0.1 - - [06/Feb/2025 01:40:52] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-06 01:40:56,676 - 127.0.0.1 - - [06/Feb/2025 01:40:56] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-06 01:41:24,868 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 01:41:24,939 -  * Restarting with stat
+2025-02-06 01:41:25,486 -  * Debugger is active!
+2025-02-06 01:41:25,488 -  * Debugger PIN: 123-894-753
+2025-02-06 01:41:26,502 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 01:41:26,534 -  * Restarting with stat
+2025-02-06 01:41:27,099 -  * Debugger is active!
+2025-02-06 01:41:27,101 -  * Debugger PIN: 123-894-753
+2025-02-06 01:41:31,942 - 127.0.0.1 - - [06/Feb/2025 01:41:31] "[31m[1mGET /users/listing HTTP/1.1[0m" 401 -
+2025-02-06 01:41:57,280 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 01:41:57,349 -  * Restarting with stat
+2025-02-06 01:41:57,873 -  * Debugger is active!
+2025-02-06 01:41:57,875 -  * Debugger PIN: 123-894-753
+2025-02-06 01:41:58,886 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 01:41:58,921 -  * Restarting with stat
+2025-02-06 01:41:59,457 -  * Debugger is active!
+2025-02-06 01:41:59,460 -  * Debugger PIN: 123-894-753
+2025-02-06 01:42:11,306 - 127.0.0.1 - - [06/Feb/2025 01:42:11] "POST /generate_token HTTP/1.1" 200 -
+2025-02-06 01:42:11,313 - Service: users, Endpoint: login, Méthode: POST, Status: 200
+2025-02-06 01:42:11,314 - 127.0.0.1 - - [06/Feb/2025 01:42:11] "POST /users/login HTTP/1.1" 200 -
+2025-02-06 01:42:24,423 - Service: users, Endpoint: listing, Méthode: GET, Status: 200
+2025-02-06 01:42:24,424 - 127.0.0.1 - - [06/Feb/2025 01:42:24] "GET /users/listing HTTP/1.1" 200 -
+2025-02-06 01:42:32,666 -  * Detected change in 'C:\\Users\\Administrateur\\Documents\\Master\\UFHB\\Master 1 BDGL\\Systèmes répartis\\middleware\\middleware\\auth.py', reloading
+2025-02-06 01:42:32,733 -  * Restarting with stat
+2025-02-06 01:42:33,275 -  * Debugger is active!
+2025-02-06 01:42:33,277 -  * Debugger PIN: 123-894-753
+2025-02-06 01:42:42,485 - Service: users, Endpoint: listing, Méthode: GET, Status: 200
+2025-02-06 01:42:42,485 - 127.0.0.1 - - [06/Feb/2025 01:42:42] "GET /users/listing HTTP/1.1" 200 -

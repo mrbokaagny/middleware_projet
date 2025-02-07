@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import requests
-from auth import init_auth, verify_token
+from auth import init_auth, verify_token, generate_token
 from logger import log_request
 
 app = Flask(__name__)
@@ -11,6 +11,20 @@ SERVICES = {
     "users": "http://localhost:5001",
     "products": "http://localhost:5002"
 }
+
+
+@app.route('/generate_token', methods=['POST'])
+def generate_token_route():
+
+    data = request.get_json()
+    user_id = data.get("id")
+    role = data.get("role")
+
+    if not user_id or not role:
+        return jsonify({"error": "Données manquantes"}), 400
+
+    token = generate_token(user_id, role)
+    return jsonify({"access_token": token})
 
 @app.route('/<service>/<path:endpoint>', methods=["GET", "POST", "PUT", "DELETE"])
 def route_request(service, endpoint):

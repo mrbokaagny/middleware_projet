@@ -22,7 +22,6 @@ def create_app():
 
     @app.before_request
     def restrict_access():
-        """ Vérifie que les requêtes viennent du middleware """
         allowed_origin = "http://localhost:5000"
         if request.referrer and not request.referrer.startswith(allowed_origin):
             return jsonify({"error": "Accès interdit"}), 403

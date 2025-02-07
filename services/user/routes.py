@@ -5,18 +5,18 @@ from models import User, Role
 
 user_bp = Blueprint('user', __name__)
 
-@user_bp.route('/users', methods=['GET'])
+@user_bp.route('/listing', methods=['GET'])
 @jwt_required()
 def get_users():
     users = User.query.all()
     users_list = [{"id": u.id, "name": u.name, "email": u.email, "role": u.role_id} for u in users]
     return jsonify(users_list)
 
-@user_bp.route('/users', methods=['POST'])
+@user_bp.route('/created', methods=['POST'])
 @jwt_required()
 def create_user():
     current_user = get_jwt_identity()
-    if current_user["role"] != 1:  # Seulement l'admin peut créer un user
+    if current_user["role"] != 1: 
         return jsonify({"error": "Permission refusée"}), 403
 
     data = request.get_json()
