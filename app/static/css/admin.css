@@ -1,0 +1,574 @@
+@font-face {
+    font-family: Poppins;
+    src: url(/assets/fonts/Poppins.ttf);
+}
+
+*::-webkit-scrollbar{
+    width: 0;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.body-container{
+    background-color: rgb(233, 233, 234);
+    position: fixed;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header-nav-bar{
+    z-index: 99999999999999999999999;
+    background-color: rgb(255, 255, 255);
+    padding: .2em;
+}
+
+.header-nav-bar img{
+    width: 50px;
+    height: 50px;
+}
+
+.nav-bar-card{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+    /* background-color: rgb(161, 161, 161); */
+    background-color: white;
+    border-radius: .5em;
+    position: relative;
+}
+
+.body-content{
+    position: relative;
+    height: 100%;
+}
+
+.profil-user-card{
+    padding: 1em;
+}
+
+.profil-user-card .card-profil{
+    width: 30px;
+    position: relative;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.profil-user-card .card-profil img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-header-right-part{
+    padding:.5em;gap:.5em;position:relative
+}
+
+.card-header-right-part .card-header-icon{
+    transition: 300ms ease-in-out;
+    width:30px;
+    height:30px;
+    background-color:white;
+    border-radius:.2em;
+    cursor:pointer;
+    font-weight:bolder;
+    font-size:20px;
+    position:relative
+}
+
+.card-header-icon.terminal-icon:hover{
+    color: green;
+}
+
+.card-header-icon.power-icon:hover{
+    color: red;
+}
+
+/* terminal overlay */
+
+.header-nav-bar .overlay-card-menu{
+    position:absolute;
+    top:82px;
+    right:.3em;
+    width:200px;
+    background-color:rgb(245, 245, 245);
+    z-index:99999999999999999999999999;
+    border-radius:.2em;
+    padding:.5em;
+    gap:.3em;
+    display: none;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;   
+}
+
+.overlay-card-menu .overlay-menu-item{
+    border-radius: .2em;
+    padding:.5em ;
+    gap:.5em;
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+    transition: 300ms ease-in-out;
+}
+
+.overlay-card-menu .overlay-menu-item:hover{
+    color: #0A1763;
+    background-color: rgb(236, 231, 231);
+}
+
+.overlay-card-menu.active-rigth-card-menu{
+    display: inherit;
+    animation-duration: 102s;
+    animation-name:  aminate-right-card;
+}
+
+@keyframes aminate-right-card{
+
+   
+
+}
+
+
+/* css end part */
+
+/* menu web side bar */
+
+.body-content .container-card{
+    position:relative;
+    height: 100%;
+    width:100%;
+}
+
+.container-card .web-left-card {
+    padding:.5em;
+    width:300px;
+    height:100vh;
+    background-color:rgb(243, 243, 243);
+}
+
+.web-card-side-header{
+    position:relative;
+    width:100%;
+    padding:.5em;
+    background-color:white;
+    border-radius:.5em;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;   
+}
+
+.web-left-card .card-side-icon{
+    width:50px;
+    height:50px
+}
+
+.body-content .web-left-card.active-toggle-web-side{
+  display: none;
+}
+
+
+
+.web-card-side-header img{
+    width: 100% ;
+    height:100%
+}
+
+.web-left-card .list-menu-items{
+    position:relative;
+    width:100%;
+    text-transform: uppercase;
+    margin-top:1.5em
+}
+
+.list-menu-items .card-item {
+    padding:.5em ;  
+    cursor:pointer;
+    color: black;
+    border-radius: .5em;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    transition: 300ms ease-in-out;
+}
+
+.list-menu-items .card-item:hover{
+    background-color: #3e4a91;
+    color: white;
+}
+
+.list-menu-items .card-menu-icon{
+    width:30px;
+    height:30px;
+    font-size:20px;
+    font-weight:bolder
+}
+
+/* right part card */
+
+.right-card{
+    position:absolute;
+    left:300px;
+    top:0;
+    padding:.5em;
+    max-height: 100vh;
+    overflow-y: scroll;
+    padding: 2.5em;
+    width:calc(100% - 300px);
+}
+
+.right-card.active-right-card{
+    left: 0;
+    width: 100%;
+}
+
+.right-card .card-header-part > span{
+    font-weight: bolder;
+    color: black;
+    opacity: .9;
+    font-size: 25px;
+}
+
+.right-card .card-header-part p{
+    padding: .5em;
+}
+
+.default-stats .default-stat-item{
+    background-color: rgb(188, 186, 186);
+    padding:.5em;
+    border-radius:.2em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/* annee acedemique */
+
+.search-input-card{
+    position: relative;
+    margin-top: .5em;
+    width: 100%;
+}
+
+.search-input-card input{
+    width: 100%;
+    border-radius: .2em;
+    border: none;
+    margin-top:1em;
+    padding: .5em;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.table-card{
+    margin-top: 3em;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding: .5em;
+    border-radius: .2em;
+}
+
+.table-card .over-table-header{
+    position: relative;
+    top: -25px;
+    color: white;
+    text-align: center;
+    padding: .5em;
+    border-radius: .2em;
+    background-color: #0A1763;
+}
+
+.list-of-table{
+    padding: .2em;
+    position:relative;
+    width: 100%;
+    overflow-x:auto
+}
+
+.list-of-table .data-table{
+   
+    width: 100%;
+}
+
+.list-of-table table thead{
+    background-color: rgb(212, 212, 212 , 0.3y);
+}
+
+
+/* .data-table tbody tr td:last-child{
+} */
+
+.data-table .table-list-icon.table-status-icon{
+    cursor: grab;
+}
+
+.data-table .table-list-icon.table-status-icon.icon-tick{
+    background-color: green;
+    border: none;
+    color: white;
+}
+
+
+.data-table .table-list-icon.table-status-icon.icon-minus{
+    background-color: red;
+    color: white;
+}
+
+
+
+
+.data-table .table-list-icon{
+    cursor: pointer;
+    border: none;
+    width:30px;
+    height:30px;
+    transition: 300ms ease-in-out;
+    border-radius:.2em;
+    background-color: rgb(234, 234, 234);
+}
+
+.table-list-icon.icon-ban{
+    color: white;
+    background-color: green;
+}
+
+.table-list-icon.icon-edit{
+    color: white;
+    background-color: blue;
+}
+
+
+.table-list-icon.icon-trash{
+    color: white;
+    background-color: green;
+}
+
+.overlay-card-to-register{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: .5em;
+    z-index: 999999999999999999999;
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+}
+
+.overlay-card-to-register.active-modal-register{
+    display: initial;
+}
+
+/* admin update modal */
+
+.modal-to-update-data , .modal-update-classroom, .rapport-frais-annexe , .bilan-frais-annexe, .modal-to-update-student-data , .confirme-delete-modal{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: .5em;
+    z-index: 999999999999999999999;
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+}
+
+.modal-to-update-data.active-modal , .modal-update-classroom.active-modal ,.rapport-frais-annexe.active-modal , .bilan-frais-annexe.active-modal , .modal-to-update-student-data.active-modal , .confirme-delete-modal.active-modal{
+    display: initial;
+}
+
+/* end css */
+
+/* css of rapport financier page */
+
+.overlay-card-to-create.active-paiement-scolarite-modal{
+    display: initial;
+}
+
+.rapport-paiement-fourniture , .bilan-paiement-fourniture{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: .5em;
+    z-index: 999999999999999999999;
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+}
+
+.rapport-paiement-fourniture.active-rapport-paiement-scolarite , .bilan-paiement-fourniture.active-rapport-paiement-scolarite{
+    display: initial;
+}
+
+.rapport-paiement-scolarite{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: .5em;
+    z-index: 999999999999999999999;
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+}
+
+.rapport-paiement-scolarite.active-bilan-paiement-scolarite-modal{
+    display: initial;
+}
+
+.rapport-versement-bancaire{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: .5em;
+    z-index: 999999999999999999999;
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+}
+
+.rapport-versement-bancaire.active-bilan-versement-bancaire-modal{
+    display: initial;
+}
+
+/* end css */
+
+
+.overlay-card-to-create{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: .5em;
+    z-index: 999999999999999999999;
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+}
+
+.overlay-card-to-create.active_modal_create{
+    display: initial;
+}
+
+
+.modal-create{
+   
+    width: 100%;
+    height: 100%;
+    
+}
+
+.comptability-content .card-title-compta{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.comptability-content p{
+    padding: .5em;
+}
+
+.comptability-content .compta-row-item{
+    gap: .5em;
+}
+
+.comptability-content .compta-item-card{
+    background-color: #E4E4E4;
+    cursor: pointer;
+    border-radius: .2em;
+    color:black;
+    font-weight: bolder;
+    text-align: center;
+    border: 1px solid #2E0020;
+    padding: .5em;
+}
+
+/* end css annee academique */
+
+/* footer */
+.footer-card-part{
+    padding: .5em;
+    margin-bottom: 5em;
+    height: 200px;
+}
+/* end footer */
+
+/* spinnerr */
+
+.spinner-load{
+    visibility: hidden;
+}
+
+.spinner-load.active{
+ visibility: visible;
+}
+
+.btn-admin-create.hidden{
+    display: none;
+}
+
+/* end spinnerr */
+
+/* security css */
+.security-card p{
+    padding: .5em;
+}
+
+.security-card .card-login-body{
+    padding:.5em;
+    gap: .5em;
+    justify-content: space-around;
+}
+
+.security-card .card-login-body form{
+    gap: 1em;
+}
+
+.security-card .card-login-item{
+    padding: .5em;
+    border-radius: .2em;
+    background-color:white
+}
+
+.security-card .btn-login-card{
+    padding: .5em
+}
+
+.security-card .login-card-header span{
+    font-weight:bolder;font-size:18px
+}
+/* end security */
+
+/* sms pro css */
+
+.card-sms-pro{
+    position: relative;
+    width: 100%;
+    padding: .5em;
+}
+.card-sms-pro .header{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-send-sms{
+    border-radius: .2em;
+    background-color: white;
+    padding: .2em;
+}
+
+/* end sms pro */
+
+.flash-message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.flash-message.error {
+    background-color: #ffdddd;
+    color: #d8000c;
+    border: 1px solid #d8000c;
+}
+.flash-message.success {
+    background-color: #ddffdd;
+    color: #4F8A10;
+    border: 1px solid #4F8A10;
+}

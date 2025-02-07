@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Stock - Authentification </title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/icofont.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/auth.css') }}">
+</head>
+<body>
+
+    <div class="app">
+        <div class="w-100 h-100 d-flex justify-content-center align-items-center">
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Bienvenue sur StockPilot </h5>
+                        <p class="sub-title text-center">
+                            Veuillez vous connecter pour accéder à votre compte.
+                        </p>
+                        <form action="/auth" method="POST">
+                            <div class="form-group mb-3">
+                                <label for="username">Identifiant</label>
+                                <input type="text" class="form-control mt-1" id="username" name="username" placeholder="agny.boka">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="password">Mot de passe</label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="**********">
+                            </div>
+                            <div class="form-group text-center">
+                                <button type="submit" class="btn btn-primary">Connexion</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/auth.js') }}"></script>
+</body>
+</html>
