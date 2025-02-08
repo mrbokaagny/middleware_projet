@@ -16,7 +16,15 @@ def dashboard():
 @main_bp.route('/products')
 def product_list():
     products = []
-    return render_template('product.html', products=products)
+
+    response = requests.get(f"{BASE_URL}/products/listing")
+
+    if response.status_code == 200:
+        data = response.json()
+        products = data["products"]
+        return render_template('product.html', products=products)
+    else:
+        flash("Une erreur s'est produite lors de la récupération des produits", "error")
 
 @main_bp.route('/users')
 def user_list():
@@ -99,7 +107,6 @@ def insert_user():
     name = data['name']
     surname = data['surname']
     email = data['email']
-    number = data['number']
     role_id = data['role_id']
     password = "bonjour"
 
@@ -139,13 +146,20 @@ def insert_product():
     price = data['price']
     quantity = data['quantity']
 
-   # success, message = create_product(name, description, price, quantity)
+    data = {
+        "name": name,
+        "description": description,
+        "price": price,
+        "stock": quantity
+    }
 
-    if not success:
-        flash(message, "error")
-        return redirect(url_for('main.product_list'))
+    response = requests.post(f"{BASE_URL}/products/created", json=data)
 
-    flash("Produit créé avec succès !", "success")
+    if response.status_code == 201:
+        flash("Produit créé avec succès !", "success")
+    else:
+        flash("Une erreur s'est produite lors de la création du produit", "error")
+
     return redirect(url_for('main.product_list'))
 
 @main_bp.route('/product/update', methods=['POST'])
@@ -165,22 +179,35 @@ def modify_product():
     quantity = data['quantity']
     id = data['product_id']
 
-   # success, message = update_product(id, name, description, price, quantity)
+    data = {
+        "name": name,
+        "description": description,
+        "price": price,
+        "stock": quantity
+    }
 
-    if not success:
-        flash(message, "error")
-        return redirect(url_for('main.product_list'))
+    print(data)
 
-    flash("Produit mis à jour avec succès !", "success")
+    response = requests.put(f"{BASE_URL}/products/{id}", json=data)
+
+    print(response)
+
+    if response.status_code == 200:
+        flash("Produit mis à jour avec succès !", "success")
+    else:
+        flash("Une erreur s'est produite lors de la modification du produit", "error")
+
     return redirect(url_for('main.product_list'))
 
 @main_bp.route('/product/<int:id>', methods=['GET'])
 def product_detail(id):
 
-   # product, message = get_product_by_id(id)
+    response = requests.get(f"{BASE_URL}/products/{id}")
 
-    if not product:
-        flash(message, "error")
-        return redirect(url_for('main.product_list'))
-
-    return jsonify(product.to_dict())
+    if response.status_code == 200:
+        data = response.json()
+        return jsonify(data)
+    else:
+        flash("Une erreur s'est produite lors de la récupération du produit", "error")
+    
+    return redirect(url_for('main.product_list'))

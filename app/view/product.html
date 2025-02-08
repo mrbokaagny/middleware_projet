@@ -144,7 +144,7 @@
                                         {% for product in products %}
                                             <tr>
                                                 <td>{{ product.name }}</td>
-                                                <td>{{ product.quantity }}</td>
+                                                <td>{{ product.stock }}</td>
                                                 <td>{{ product.price }}</td>
                                                 <td>{{ product.description }}</td>
                                                 <td class="d-flex justify-content-around align-items-center btn-fade-modal-update">
@@ -162,16 +162,17 @@
                             <div class="d-flex justify-content-center align-items-center modal-create">
                                 <div class="col-sm-8 col-md-4 m-0" style="background-color:white;padding:.5em;border-radius:.5em">
                                         <div class="card-create-header d-flex justify-content-between align-items-center" style="padding:.2em">
-                                            <span>Modifier les informations d'un établissement scolaire</span>
+                                            <span>Modifier les informations d'un produit</span>
                                             <span style="width:30px;height:30px;border:1px solid red;color:red;border-radius:.2em;cursor:pointer" class="d-flex justify-content-center align-items-center btn-to-close-modal-create"><i class="icofont-ui-close"></i></span>
                                         </div>
                                         <div class="card-form-create w-100" style="position:relative;padding:.5em">
-                                            <form method="POST" action="/product/update" class="row p-0 m-0" style="gap:.0em">
-                                                <div class="col-8">
+                                            
+                                            <form id="content-of-update-product-modal" method="POST" action="/product/update" class="row p-0 m-0" style="gap:.0em">
+                                                <div class="col-12">
                                                     <label for="name"> Nom du produit </label>
                                                     <input type="texte" name="name" id="upd_name" class="form-control">
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="col-12 mt-2">
                                                     <label for="quantity"> Quantité  </label>
                                                     <input name="quantity" type="number" id="upd_quantity" class="form-control">
                                                 </div>
@@ -192,6 +193,10 @@
                                                     </button>
                                                 </div>
                                             </form>
+
+                                            <p id="loading-product-data" class="text-center">
+                                                Chargement des informations du produit
+                                            </p>
                                         </div>
                                 </div>
                             </div>
@@ -214,18 +219,26 @@
 <script src="{{ url_for('static', filename='js/admin.js') }}"></script>
 <script>
     function product_detail(id){
+        
+        $("#card-to-load-admin-content-page__ #loading-product-data").css("display", "initial");
+        $("#card-to-load-admin-content-page__ #content-of-update-product-modal").css("display", "none");
+
         $.ajax({
             url: '/product/'+id,
             type: 'GET',
             success: function(data){
+
+                $("#card-to-load-admin-content-page__ #content-of-update-product-modal").css("display", "block");
+                $("#card-to-load-admin-content-page__ #loading-product-data").css("display", "none");
+
                 $("#upd_name").val(data.name)
-                $("#upd_quantity").val(data.quantity)
+                $("#upd_quantity").val(data.stock)
                 $("#upd_price").val(data.price)
                 $("#upd_description").val(data.description)
                 $("#product_id").val(data.id)	
             },
             error: function(error){
-                console.log(error)
+                alert("Une erreur s'est produite lors de la récupération des informations du produit")
             }
         })
     }
