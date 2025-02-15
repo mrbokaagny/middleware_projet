@@ -20,6 +20,15 @@
                         <p class="sub-title text-center">
                             Veuillez vous connecter pour accéder à votre compte.
                         </p>
+                        <p>
+                            {% with messages = get_flashed_messages(with_categories=True) %}
+                                {% if messages %}
+                                    {% for category, message in messages %}
+                                        <div class="flash-message {{ category }}">{{ message }}</div>
+                                    {% endfor %}
+                                {% endif %}
+                            {% endwith %}
+                        </p>
                         <form action="/auth" method="POST">
                             <div class="form-group mb-3">
                                 <label for="username">Identifiant</label>
@@ -39,6 +48,8 @@
         </div>
     </div>
     
-    <script src="{{ url_for('static', filename='js/auth.js') }}"></script>
+
 </body>
+<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script src="{{ url_for('static', filename='js/auth.js') }}"></script>
 </html>

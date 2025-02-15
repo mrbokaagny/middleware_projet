@@ -26,3 +26,17 @@ def login():
         return response.json()
     else:
         return jsonify({"error": "Erreur lors de la génération du token"}), 500
+    
+@auth_bp.route('/logout', methods=['GET'])
+def logout():
+    
+    try :
+        response = requests.post(f"{MIDDLEWARE_URL}/logout")
+
+        if response.status_code == 200:
+            return response.json()
+        else:
+            return jsonify({"error": "Erreur lors de la suppression du token"}), 500
+    except Exception as e:
+        print(e)
+        return jsonify({"error": "Erreur lors de la suppression du token"}), 500

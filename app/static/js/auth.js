@@ -1,3 +1,7 @@
-document.getElementById("myButton").addEventListener("click", function() {
-    alert("Bouton cliqué !");
-});
+(function($){
+
+    setTimeout(() => {
+        document.querySelectorAll(".flash-message").forEach(msg => msg.remove());
+    }, 3000);
+
+})(jQuery)
